@@ -1,4 +1,5 @@
-# Prosty chat
+# Laboratorium 11
+## Prosty chat
 
 Napisz prosty chat typu klient-serwer w którym komunikacja pomiędzy uczestnikami czatu / klientami / klientami i serwerem realizowana jest za pośrednictwem socketów z użyciem protokołu strumieniowego.
 

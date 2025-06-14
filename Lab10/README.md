@@ -1,4 +1,5 @@
-# Zadanie 1: Problem lekarza
+# Laboratorium 10
+## Zadanie 1: Problem lekarza
 W ramach zadania należy zaimplementować rozwiązanie problemu synchronizacji w środowisku szpitalnym.
 
 W małym szpitalu dyżuruje jeden lekarz, który obsługuje dwie grupy:
@@ -13,10 +14,10 @@ Apteczka (leki) ma ograniczoną pojemność (np. 6), a każda konsultacja zużyw
 Lekarz może przyjąć pacjentów tylko, jeśli ma dostępną wystarczającą ilość leków w apteczce (conajmniej 3).
 
 
-### Komunikaty 
+#### Komunikaty 
 Lekarz, pacjenci oraz farmaceuci powinni informować w formie komunikatów (informacji na standardowe wyjście o aktualnych etapach). Zmienne do komunikatów: TIME - dokładny czas w systemie, PATIENT_ID - identyfikator pacjenta, PHARMACIST_ID - identyfikator farmaceuty
 
-## Zachowania pacjentów:
+### Zachowania pacjentów:
 Przychodzą do szpitala po losowym czasie (2–5s).
 (Komunikat: [TIME] - Pacjent(PATIENT_ID): Ide do szpitala, bede za _ s).
 
@@ -34,7 +35,7 @@ Po konsultacji wracają do domu
 
 
 
-## Zachowania farmaceutów:
+### Zachowania farmaceutów:
 Przybywają z nową dostawą po losowym czasie (5–15s).
 (Komunikat: [TIME] - Farmaceuta(PHARMACIST_ID): ide do szpitala, bede za _ s).
 
@@ -54,7 +55,7 @@ Po dostawie kończą pracę
 
 
 
-## Zachowania lekarza:
+### Zachowania lekarza:
 Śpi, dopóki nie wystąpi jeden z warunków:
 
 3 pacjentów czeka, i leki >= 3
@@ -91,7 +92,7 @@ Program należy zaimplementować korzystając z wątków (pthread) i mechanizmó
 Użycie odpowiednich mechanizmów ma zagwarantować niedopouszczenie, np. do zdarzeń: Lekarz śpi chociaż czeka na niego 3 pacjentów lub Farmaceuta nie jest w stanie uzupełnić leków, więcej niż jeden farmaceuta uzupełnia apteczke itp.
 
 
-### 2 Wersje problemu:
+#### 2 Wersje problemu:
 Zadanie można oddać w 2 wariantach:
 
 100 % - pełne rozwiązanie jak opisano powyżej (lekarz + pacjenci i farmaceuci)
